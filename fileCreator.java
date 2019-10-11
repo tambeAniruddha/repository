@@ -9,7 +9,8 @@ public class fileCreator {
 		String fileSeparator = System.getProperty("file.separator");
         
         //absolute file name with path
-        String absoluteFilePath = "D:\\SMS automation\\SMS8.1-2019\\test\\resources\\data\\file.txt";
+        String absoluteFilePath = "D:\\SMS8.1-2019\\test\\resources\\data\\test.java";
+        
         		
         //fileSeparator+"SMS8.1-2019"+fileSeparator+"test"+fileSeparator+"resources"+fileSeparator+"data"+fileSeparator+"file.txt";
         //"D:\\SMS automation\\SMS8.1-2019\\test\\resources\\data"
@@ -21,8 +22,7 @@ public class fileCreator {
 	}
 	
 	public void writeInFile(String data) throws IOException {
-		   
-		String absoluteFilePath = "D:\\SMS automation\\SMS8.1-2019\\test\\resources\\data\\file.txt";
+		String absoluteFilePath = "D:\\SMS8.1-2019\\test\\resources\\data\\test.java";
         FileOutputStream fos = new FileOutputStream(absoluteFilePath);
         fos.write(data.getBytes());
         fos.flush();

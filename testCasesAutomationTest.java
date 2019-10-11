@@ -14,7 +14,7 @@ public class testCasesAutomationTest {
 		@DataProvider(name = "DP1")
 		public Object[][] readExcel(){
 			return new Object[][] {
-				{"Navigate to Contract > New Contract"}
+				{"Navigate to Contract > Resume"}
 			};
 		}
 		//Test
@@ -25,6 +25,7 @@ public class testCasesAutomationTest {
 			fileCreator create = new fileCreator();
 			testStepAnalyzer analyzer = new testStepAnalyzer();
 			codeMaker maker = new codeMaker();
+			
 			create.createFile();
 			create.writeInFile(maker.coder(analyzer.encodeStep(testStep))); 
 		}
@@ -37,6 +38,4 @@ public class testCasesAutomationTest {
 		public void close() {
 			System.out.println("After test");
 		}
-
-
 }
